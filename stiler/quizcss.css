@@ -1,0 +1,301 @@
+#conteiner{
+    background: rgb(185,217,235);
+    background: linear-gradient(180deg,  rgba(185,217,235,1) 0%, rgba(0,45,98,1) 100%);
+    padding: 10px;
+    border: black 2px solid;
+    height: 800px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+
+}
+
+body{
+    background-color:#F2C0A2 ;
+    background-image: url(../bilder/0682s.jpg);
+    padding-top: 50px;
+}
+
+#logo{
+    height: 100px;
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    top: 50px;
+    right: 120px; 
+    position: absolute;
+}
+
+
+h1{
+    font-size: 70px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2{
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+#fyllInn{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+#input{
+    flex-direction: row;
+}
+
+#spill{
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: aquamarine;
+    font-family: 'Oswald', sans-serif;
+}
+
+#spill:hover{
+    background-color: rgb(120, 211, 181);
+}
+
+
+#bruker{
+    width:250px;
+    height:60px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+#bruker:hover{
+    cursor: grab;
+}
+
+#sporsmal{
+    display: none;
+    font-family: 'Concert One', sans-serif;   
+}
+
+#sporsmal2{
+    display: none;
+    font-family: 'Concert One', sans-serif;   
+}
+
+#sporsmal3{
+    display: none;
+    font-family: 'Concert One', sans-serif;   
+}
+
+#sporsmal4{
+    display: none;
+    font-family: 'Concert One', sans-serif;   
+}
+
+#sporsmal5{
+    display: none;
+    font-family: 'Concert One', sans-serif;   
+}
+
+#sporsmal6{
+    display: none;
+    font-family: 'Concert One', sans-serif;   
+}
+
+#sporsmal7{
+    display: none;
+    font-family: 'Concert One', sans-serif;   
+}
+
+#sporsmal8{
+    display: none;
+    font-family: 'Concert One', sans-serif;   
+}
+
+#sporsmal9{
+    display: none;
+    font-family: 'Concert One', sans-serif;   
+}
+
+#sporsmal10{
+    display: none;
+    font-family: 'Concert One', sans-serif;   
+}
+
+
+.riktig{
+    background-color: rgba(0, 128, 0, 0.801);
+}
+.feil{
+    background-color: rgba(255, 0, 0, 0.76);
+}
+
+.gjettet{
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.deaktiver{
+    pointer-events: none;
+}
+
+#navn{
+    display: none;
+    background-color:rgba(148,187,233,1);
+    padding: 20px;
+    border: 2px black solid;
+    flex-direction: column;
+    position:absolute;
+    width:10%;
+    justify-content: flex-start;
+    top: 100px;
+    left: 230px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
+    font-family: 'Oswald', sans-serif;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+#navn:hover{
+    transform:scale(1.05);
+}
+
+.answer-button{
+    width:200px;
+    height:80px;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    margin-right: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+
+
+
+.answer-button:hover{
+    transform:scale(1.1);
+    cursor: pointer;
+}
+
+.neste{
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: aquamarine;
+    font-family: 'Oswald', sans-serif;
+}
+
+.neste:hover{
+    background-color: rgb(120, 211, 181);
+}
+
+#scoreTable{
+    display: none;
+    background-color:rgba(148,187,233,1);
+    padding: 20px;
+    border: 2px black solid;
+    flex-direction: column;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
+    font-family: 'Oswald', sans-serif;
+    border-radius: 5px;
+    transition: transform 0.2s;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    font-size: 60px;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.tidIgjen{
+    width: 350px;
+    padding: 20px;
+    font-size: 40px;
+    border: solid black 2px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    font-family: 'Oswald', sans-serif;
+    border-radius: 35px;
+    transition: transform 0.2s;
+    background-color:rgb(148, 164, 233);
+    margin: auto;
+}
+
+.tidIgjen:hover{
+    transform:scale(1.05);
+}
+
+.luft{
+    padding: 20px;
+}
+
+.poengsum{
+    padding-bottom: 40px;
+}
+
+.random{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(236, 255, 127);
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+}
+
+.reset{
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(255, 127, 127);
+    font-family: 'Oswald', sans-serif;
+}
+
+
+
+#highscores{
+    display: flex;
+    background-color:rgba(148,187,233,1);
+    padding-bottom: 15px;
+    border: 2px black solid;
+    flex-direction: column;
+    position:absolute;
+    width:260px;
+    justify-content: flex-start;
+    top: 200px;
+    left: 215px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
+    font-family: 'Oswald', sans-serif;
+    border-radius: 5px;
+    transition: transform 0.2s;
+    font-size: 30px;
+}
+
+#scores{
+    font-size: 20px;
+    color: rgb(25, 51, 49);
+}
+
+#resetKnapp{
+    width: 70px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: rgb(255, 127, 127);
+    font-family: 'Oswald', sans-serif;
+    font-size: 10px;
+    margin: auto;
+}
+
+
+
+
+

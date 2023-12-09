@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stiler/cssHoved.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Merriweather+Sans:wght@600&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="x-icon" href="bilder/syden.no.logo.png">
+    <title>Syden.no</title>
+</head>
+<body>
+    
+    <div id="conteiner">
+        <div id="top">
+            <img id="logo" src="bilder/LogoSydenno.jpeg">
+            <img id="logo" src="bilder/Divider.jpeg">
+            <ul>
+                <li><a href="sider/quiz.html">QUIZ</a></li>
+                <li><a href="" >SOMMERTUR</a></li>
+                <li><a href="">VINTERTUR</a></li>
+                <li><a href="">PRAKTISK INFORMASJON</a></li>
+            </ul>
+        </div>
+
+        <div id="slideshow">
+            <div id="barcelona" class="slides">
+                <img class="bilde" src="bilder/Worlds-Greatest-Places-Barcelona-Spain.jpg">
+                <ul>
+                    <li><a class="forrige" onclick="forrige()">&#10094;</a> </li>
+                    <li>Barcelona</li>
+                    <li><a class="neste" onclick="neste()">&#10095;</a></li>
+                </ul>
+            </div>
+
+            <div id="milan" class="slides">
+                <img class="bilde" src="bilder/pexels-fede-roveda-4179480.jpg">
+                <ul>
+                    <li><a class="forrige" onclick="forrige()">&#10094;</a> </li>
+                    <li>Milan</li>
+                    <li><a class="neste" onclick="neste()">&#10095;</a></li>
+                </ul>
+            </div>
+
+            <div id="matterhorn" class="slides">
+                <img class="bilde" src="bilder/pexels-christian-buergi-6344695.jpg">
+                <ul>
+                    <li><a class="forrige" onclick="forrige()">&#10094;</a> </li>
+                    <li>Matterhorn</li>
+                    <li><a class="neste" onclick="neste()">&#10095;</a></li>
+                </ul>
+            </div>
+
+            <div id="lofoten" class="slides">
+                <img class="bilde" src="bilder/pexels-op-12118245.jpg">
+                <ul>
+                    <li><a class="forrige" onclick="forrige()">&#10094;</a> </li>
+                    <li>Lofoten</li>
+                    <li><a class="neste" onclick="neste()">&#10095;</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let bilde1 = document.getElementById("barcelona");
+        let bilde2 = document.getElementById("milan");
+        let bilde3 = document.getElementById("matterhorn");
+        let bilde4 = document.getElementById("lofoten");
+        let bildeIndex = 1;
+
+            bilde1.style.display = "block";
+            bilde2.style.display = "none";
+            bilde3.style.display = "none";
+            bilde4.style.display = "none";
+
+        function neste(){
+            bildeIndex += 1;
+        
+
+            if(bildeIndex > 4){
+                bildeIndex -= 4;
+            }
+            visBilde();
+
+        }
+        
+        function forrige(){
+            bildeIndex -= 1;
+        
+
+            if(bildeIndex < 1){
+                bildeIndex += 4;
+            }
+
+            visBilde();
+
+        } 
+        
+        function visBilde() {
+            bilde1.style.display = "none";
+            bilde2.style.display = "none";
+            bilde3.style.display = "none";
+            bilde4.style.display = "none";
+
+            if (bildeIndex === 1) {
+                bilde1.style.display = "block";
+            } else if (bildeIndex === 2) {
+                bilde2.style.display = "block";
+            } else if (bildeIndex === 3) {
+                bilde3.style.display = "block";
+            } else if (bildeIndex === 4) {
+                bilde4.style.display = "block";
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

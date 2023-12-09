@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    background-color: white;
+}
+
+#conteiner{
+    width: 100%;
+    margin: auto;
+    background-color: #1061e4a8;
+}
+
+#top{
+    background-color: #1061E4;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 4px #F5AFBA;
+    margin: auto;
+    justify-content: center;
+}
+
+#logo{
+    height: 150px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+ul a:hover{
+    text-decoration: underline;
+}
+
+ul{
+    list-style-type: none;
+    display: inline-block;
+    text-decoration: none;
+    font-size:25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul li{
+    display:inline;
+    padding: 15px;
+}
+
+ul li a{
+    color: #F5AFBA;
+}
+
+.bilde{
+    height: 650px;
+    width: 1100px;
+    object-fit: cover;
+    border-bottom: 2px solid black ;
+}
+
+#slideshow{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.slides{
+    display: flex;
+    border: black 4px solid;
+    max-width: 1100px;
+    flex-direction: row-reverse;
+    text-align: center;
+    align-content: center;
+    background-color: #F5AFBA;
+    margin: auto;
+    
+    
+}
+
+.slides ul li{
+    justify-content: space-between;
+}
+
+.slides ul li a{
+    color: black;
+}
+
+.slides ul{
+    font-size: 40px;
+
+}
+
+.slides ul a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.forrige ul li a:hover{
+    cursor: crosshair;
+}
+
+
+
+
+
+

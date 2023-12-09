@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../stiler/quizcss.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Merriweather+Sans:wght@600&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="x-icon" href="../bilder/syden.no.logo.png">
+    <title>Quiz</title>
+</head>
+<body>
+    <div id="conteiner">
+        <h1>Hovedstad-Quiz</h1>
+        <div id="fyllInn">
+            <input type="text" id="bruker" placeholder="Brukernavn" required>
+            <button id="spill" onclick="fjernInnhold()" >Start quiz</button>
+            <div id="knapper">
+                <button class="random" onclick="tilfeldigNavnQuiz()" >Tilfeldig Navn</button>
+                <button class="random" onclick="tilfeldig()" >Tilfeldig Score</button>
+            </div>
+        </div>
+        
+        <h3><div id="navn"></div></h3>
+
+        <div id="logo"><img id="logo" src="../bilder/syden.no.logo.png"></div>
+
+        <div id="sporsmal">
+            <h2>Hva er hovedstaden i Frankrike?</h2>
+            <button class="answer-button" onclick="svar(this)" id="riktig1">Paris</button>
+            <button class="answer-button" onclick="svar(this)">Berlin</button>
+            <button class="answer-button" onclick="svar(this)">Oslo</button>
+            <button class="answer-button" onclick="svar(this)">Roma</button>
+
+            <h3 id="resultat"></h3>
+
+            <button id="neste1" class="neste" onclick="sporsmal2()" >Neste spørsmål</button>
+            
+
+            <div class="luft"></div>
+
+            <div id="tid1" class="tidIgjen"></div>
+        </div>
+
+        <div id="sporsmal2">
+            <h2>Hva er hovedstaden i England?</h2>
+            <button class="answer-button" onclick="svar2(this)">Manchester</button>
+            <button class="answer-button" onclick="svar2(this)">Oxford</button>
+            <button class="answer-button" onclick="svar2(this)" id="riktig2">London</button>
+            <button class="answer-button" onclick="svar2(this)">Helsinki</button>
+
+
+
+            <h3 id="resultat2"></h3>
+
+            <button id="neste2" class="neste" onclick="sporsmal3()" >Neste spørsmål</button>
+
+            <div class="luft"></div>
+            
+            <div id="tid2" class="tidIgjen"></div>
+
+        </div>
+        
+        <div id="sporsmal3">
+            <h2>Hva er hovedstaden i Tyskland?</h2>
+            <button class="answer-button" onclick="svar3(this)">Dresden</button>
+            <button class="answer-button" onclick="svar3(this)" id="riktig3">Berlin</button>
+            <button class="answer-button" onclick="svar3(this)">Warsawa</button>
+            <button class="answer-button" onclick="svar3(this)">Krakow</button>
+
+            <h3 id="resultat3"></h3>
+
+            <button id="neste3" class="neste" onclick="sporsmal4()" >Neste spørsmål</button>
+
+            <div class="luft"></div>
+            
+            <div id="tid3" class="tidIgjen"></div>
+
+        </div>
+
+        <div id="sporsmal4">
+            <h2>Hva er hovedstaden i Vietnam?</h2>
+            <button class="answer-button" onclick="svar4(this)">Taipei</button>
+            <button class="answer-button" onclick="svar4(this)" id="riktig4">Hanoi</button>
+            <button class="answer-button" onclick="svar4(this)">Haiphong</button>
+            <button class="answer-button" onclick="svar4(this)">Palayu</button>
+
+
+            <h3 id="resultat4"></h3>
+
+            <button id="neste4" class="neste" onclick="sporsmal5()" >Neste spørsmål</button>
+
+            <div class="luft"></div>
+            
+            <div id="tid4" class="tidIgjen"></div>
+
+        </div>
+
+        <div id="sporsmal5">
+            <h2>Hva er hovedstaden i Sri Lanka?</h2>
+            <button class="answer-button" onclick="svar5(this)">Matara</button>
+            <button class="answer-button" onclick="svar5(this)">Puttalam</button>
+            <button class="answer-button" onclick="svar5(this)">Mumbai</button>
+            <button class="answer-button" onclick="svar5(this)" id="riktig5">Colombo</button>
+
+            <h3 id="resultat5"></h3>
+
+            <button id="neste5" class="neste" onclick="sporsmal6()" >Neste spørsmål</button>
+
+            <div class="luft"></div>
+            
+            <div id="tid5" class="tidIgjen"></div>
+
+        </div>
+
+        <div id="sporsmal6">
+            <h2>Hva er hovedstaden i Somalia?</h2>
+            <button class="answer-button" onclick="svar6(this)" id="riktig6">Mogadishu</button>
+            <button class="answer-button" onclick="svar6(this)">Kampala</button>
+            <button class="answer-button" onclick="svar6(this)">Nairobi</button>
+            <button class="answer-button" onclick="svar6(this)">Jedda</button>
+
+
+            <h3 id="resultat6"></h3>
+
+            <button id="neste6" class="neste" onclick="sporsmal7()" >Neste spørsmål</button>
+            
+            <div class="luft"></div>
+            
+            <div id="tid6" class="tidIgjen"></div>
+
+        </div>
+
+        <div id="sporsmal7">
+            <h2>Hva er hovedstaden i Bolivia?</h2>
+            <button class="answer-button" onclick="svar7(this)">Quito</button>
+            <button class="answer-button" onclick="svar7(this)">Boliv City</button>
+            <button class="answer-button" onclick="svar7(this)" id="riktig7">La Paz</button>
+            <button class="answer-button" onclick="svar7(this)">Lima</button>
+
+
+            <h3 id="resultat7"></h3>
+
+            <button id="neste7" class="neste" onclick="sporsmal8()" >Neste spørsmål</button>
+
+            <div class="luft"></div>
+            
+            <div id="tid7" class="tidIgjen"></div>
+
+        </div>
+
+        <div id="sporsmal8">
+            <h2>Hva er hovedstaden i USA?</h2>
+            <button class="answer-button" onclick="svar8(this)">New York</button>
+            <button class="answer-button" onclick="svar8(this)">Washington</button>
+            <button class="answer-button" onclick="svar8(this)">Los Angeles</button>
+            <button class="answer-button" onclick="svar8(this)" id="riktig8">Washington DC</button>
+
+            <h3 id="resultat8"></h3>
+
+            <button id="neste8" class="neste" onclick="sporsmal9()" >Neste spørsmål</button>
+
+            <div class="luft"></div>
+            
+            <div id="tid8" class="tidIgjen"></div>
+
+        </div>
+
+        <div id="sporsmal9">
+            <h2>Hva er hovedstaden i Canada?</h2>
+            <button class="answer-button" onclick="svar9(this)" id="riktig9">Ottowa</button>
+            <button class="answer-button" onclick="svar9(this)">Toronto</button>
+            <button class="answer-button" onclick="svar9(this)">London</button>
+            <button class="answer-button" onclick="svar9(this)">Vancouver</button>
+
+            <h3 id="resultat9"></h3>
+
+            <button id="neste9" class="neste" onclick="sporsmal10()" >Neste spørsmål</button>
+
+            <div class="luft"></div>
+            
+            <div id="tid9" class="tidIgjen"></div>
+
+        </div>
+
+        <div id="sporsmal10">
+            <h2>Hva er hovedstaden i Burkina Faso?</h2>
+            <button class="answer-button" onclick="svar10(this)">Ouahigouya</button>
+            <button class="answer-button" onclick="svar10(this)">Tenkodogo</button>
+            <button class="answer-button" onclick="svar10(this)">Namounou</button>
+            <button class="answer-button" onclick="svar10(this)" id="riktig10">Ouagadougou</button>
+
+            <h3 id="resultat10"></h3>
+
+            <button id="neste10" class="neste" onclick="ferdig()" >Resultat</button>
+
+            <div class="luft"></div>
+            
+            <div id="tid10" class="tidIgjen"></div>
+
+        </div>
+
+        <div id="scoreTable">
+            <div id="poengsum"></div>
+        </div>
+
+        <div id="highscores">
+            <h3>Highscores</h3>
+            <div id="scores"></div>
+            <br>
+            <button id="resetKnapp" onclick="reset()">Reset</button>
+        </div>
+        <div id="promp"></div>
+        
+
+
+        <audio id="riktigLyd" src="../bilder/ta-da_yrvBrlS.mp3"></audio>
+        <audio id="feilLyd" src="../bilder/wrong-answer-buzzer.mp3"></audio>
+
+
+    </div>
+    <script src="../script/quizJAVA.js"></script>
+
+
+    
+</body>
+</html>
